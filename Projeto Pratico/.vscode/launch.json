@@ -1,0 +1,47 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch MonitorGUI",
+            "request": "launch",
+            "mainClass": "monitorGUI.MonitorGUI",
+            "projectName": "monitorGUI-app"
+        },
+        {
+            "type": "java",
+            "name": "Launch Jogador",
+            "request": "launch",
+            "mainClass": "jogador.Jogador",
+            "projectName": "app"
+        },
+        {
+            "type": "java",
+            "name": "Launch Auditor",
+            "request": "launch",
+            "mainClass": "auditor.Auditor",
+            "projectName": "auditor-app",
+            "args": "8 25"
+        },
+        {
+            "type": "java",
+            "name": "Launch MonitorGUI",
+            "request": "launch",
+            "mainClass": "std.monitorGUI.MonitorGUI",
+            "projectName": "app"
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch Jogador",
+            "request": "launch",
+            "mainClass": "std.jogador.Jogador",
+            "projectName": "app"
+        }
+    ]
+}

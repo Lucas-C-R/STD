@@ -1,0 +1,23 @@
+version: "2"
+
+services:
+  auditor:
+    stdin_open: true 
+    tty: true        
+    build:
+      dockerfile: ./auditor/Dockerfile
+    environment:
+      - TAMANHO=8
+      - BANDEIRAS=25
+      
+  jogador:
+    stdin_open: true 
+    tty: true 
+    build:
+      dockerfile: ./jogador/Dockerfile
+  
+  rabbit:
+    image: rabbitmq:3-management-alpine
+    ports:
+      - "5672:5672"
+      - "15672:15672"

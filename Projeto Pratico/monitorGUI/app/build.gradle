@@ -1,0 +1,32 @@
+plugins {
+    // Apply the application plugin to add support for building a CLI application in Java.
+    id 'application'
+
+    id 'com.github.johnrengelman.shadow' version '7.1.2'
+}
+
+repositories {
+    // Use Maven Central for resolving dependencies.
+    mavenCentral()
+}
+
+dependencies {
+    // Use JUnit Jupiter for testing.
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.8.2'
+
+    // This dependency is used by the application.
+    implementation 'com.google.guava:guava:31.0.1-jre'
+
+    // https://mvnrepository.com/artifact/com.rabbitmq/amqp-client
+    implementation 'com.rabbitmq:amqp-client:5.14.0'
+
+    // https://mvnrepository.com/artifact/org.slf4j/slf4j-simple
+    testImplementation 'org.slf4j:slf4j-simple:1.7.32'
+
+    implementation files('libs/algs4.jar')
+}
+
+application {
+    // Define the main class for the application.
+    mainClass = 'monitorGUI.MonitorGUI'
+}
